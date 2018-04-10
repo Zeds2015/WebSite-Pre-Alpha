@@ -15,9 +15,9 @@ and open the template in the editor.
 
         <!--Inicio do cabeçalho-->
         <header>
-            <img src="img/monstercat.png" alt="monstercat logo" id="logo"/>
-            <h1 style="text-align: center; color: white; position: absolute;left: 45%" id="title">Monstercat</h1>
-            <form method="post" action="formulario">
+            <img src="img/monstercat.png" alt="monstercat logo" class="logo" id="logoCabecalho"/>
+            <h1 style="text-align: center; color: white; position: absolute;left: 45%; font-size: 28pt;">Monstercat</h1>
+            <form action="formulario">
                 <input type="text" name="userName" value="Digite o seu nome de usuário"/>
                 <input type="text" name="userPass" value="Digite a sua senha"/>
                 <input type="submit" value="enviar dados"/>
@@ -27,6 +27,15 @@ and open the template in the editor.
 
         <!--Conteudo central-->
         <div id="content" class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#history">História</a></li>
+                    <li><a href="#krewella">Entrada de Krewela</a></li>
+                    <li><a href="#albuns">Albuns</a></li>
+                    <li><a href="#artists">Artistas</a></li>
+                </ul>
+            </nav>
             <section id="about">
                 <h2 id="aboutSubTitle">Sobre</h2>
                 <p>
@@ -40,35 +49,51 @@ and open the template in the editor.
                     Em julho de 2011, Mike Darlington (CEO) e Ari Paunonen (COO) criaram a Monstercat como um canal no YouTube. Este canal serviu como um meio para que os amigos de Darlington e Paunonen pudessem compartilhar e promover suas músicas. Os dois criaram álbuns compilados para dar aos artistas uma maneira de lançar suas músicas e diminuir a competividade entre eles. A primeira música lançada foi "Dubstep Killed Rock 'n' Roll" feita por Ephixa. O primeiro álbum da Monstercat,Launch Week, contava com sete artistas: Feint, Halo Nova (hoje Varien), Stephen Walking, Ephixa, Neilio, Arion, e Going Quantum. Álbuns recentes possuem até 30 artistas e têm uma variedade de gêneros bem maior.
                 </p>
                 <h2 id="krewella">Entrada de Krewella</h2>
-                <p>
+                <figure>
+                    <img src="img/Krewela.jpg" alt="grupo krewella" class="images" id="imgKrewella"/>
+                    <figcaption>Grupo Krewella</figcaption>
+                </figure>
+                <p id="paragraphOfKrewela">
                     Em dezembro de 2011, a Monstercat contratou Krewella, um grupo americano de música eletrônica de Chicago, Illinois. "Killin' It" foi a primeira música lançado por Krewella. A Monstercat promoveu Krewella com campanhas e fez diversas parcerias para uma maior plataforma. A segunda música deles na Monstercat foi uma colaboração com Pegboard Nerds chamada 'This Is Not The End'. A faixa foi lançada em setembro de 2013 mas foi vendida somente no álbum 'Get Wet' através da Columbia Records.
-                    2014 em diante
                 </p>
             </section>
             <section id="albuns">
-                <h2 id="albunsSubTitle">Albuns</h2>
-                <ul>
+                <h2 id="albunsSubTitle">Alguns Albuns</h2>
+                <ul id="albuns-list">
                     <li>Launch Week</li>
                     <li>Early Stage</li>
                     <li>Momentum</li>
                     <li>Identity</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Uproar</li>
+                    <li>Cataclysm</li>
+                    <li>Resistance</li>
+                    <li>Threshold</li>
+                    <li>Voyage</li>
                 </ul>
             </section>
             <section id="artists">
-                <h2 id="artistsSubTitle">Artistas</h2>
+                <h2 id="artistsSubTitle">Alguns Artistas</h2>
+                <ul id="artists-list">
+                    <li>Project 46</li>
+                    <li>Stephen Walking</li>
+                    <li>Mr FijiWiji</li>
+                    <li>Tristam</li>
+                    <li>Noisestorm</li>
+                    <li>1uP</li>
+                    <li>Going Quantum</li>
+                    <li>Tut Tut Child</li>
+                    <li>DotEXE</li>
+                </ul>
             </section>
         </div>
         <!--Fim do conteudo central-->
 
         <!--Inicio do rodapé-->
         <footer>
-
+            <a href="https://www.unicarioca.edu.br/" target="_blank"><img src="img/unicarioca.png" alt="logo da unicarioca" class="logo" id="unicarioca"/></a>
+            <img src="img/monstercat.png" alt="logo rodapé" class="logo" id="logoRodape"/>
         </footer>
+        
         <!--Fim do rodapé-->
         <!--Introdução dos scripts-->
         <script type="text/javascript" src="js/index.js"></script>
